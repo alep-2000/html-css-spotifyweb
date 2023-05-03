@@ -14,11 +14,12 @@
     position: relative;
 }
 
+/* TOPBAR */
 .topbar{
     width: calc(100% - 200px);
-    height: 100px;
     margin-left: 200px;
     background-color: #080b12;
+    opacity: 0.8;
     justify-content: flex-end;
     align-items: center;
     position: fixed;
@@ -28,12 +29,19 @@
 }
 
 .col-100{
-    width: calc(200px - 20px);
-    height: 50px;
-    margin: 10px;
-    background-color: orange;
+    width: calc(200px);
 }
 
+button{
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 10px;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 10px 15px 35px;
+    border-color: white;
+}
+/* END TOPBAR */
 .sidebar{
     width: 200px;
     height: 660px;
@@ -80,7 +88,7 @@
     height: 1000px;
     margin-left: 200px;
     margin-bottom: 100px;
-    background-color: red;
+    background-color: #141922;
     position: absolute;
     position: relative;
     flex-direction: column;
