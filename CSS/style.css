@@ -44,7 +44,7 @@ button{
 /* END TOPBAR */
 .sidebar{
     width: 200px;
-    height: 660px;
+    height: 100vh;
     background-color: black;
     position: absolute;
     flex-direction: column;
@@ -54,6 +54,10 @@ button{
     z-index: 1;
 }
 
+.sidebar .col-15, .col-10{
+    justify-content: space-between;
+}
+
 .col-12{
     width: calc(100% - 20px);
     margin: 5px 10px;
@@ -61,6 +65,11 @@ button{
 
 .col-12 img{
     width: 120px;
+    display: block;
+}
+
+#small{
+    display: none;
 }
 
 .content h4{
@@ -103,6 +112,8 @@ button{
 .col-15{
     width: calc(100% - 20px);
     margin: 5px 10px;
+    height: 30vh;
+    overflow-y: auto;
 }
 
 .col-15 .content{
@@ -112,13 +123,21 @@ button{
 
 .col-10{
     width: calc(100% - 20px);
-    margin: 155px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    z-index: 1;
 }
 
 div img{
     width: 17px;
     color: #a3a3a3;
     vertical-align: middle;
+}
+
+#margin{
+    margin: 20px 10px 0 5px;
 }
 
 div span{
@@ -133,11 +152,12 @@ div img, div hr{
 div hr{
     margin-top: 5px;
     border-radius: 10px;
+    width: 180px;
 }
 
 .border{
     vertical-align: middle;
-    margin-top: 10px;
+    margin: 10px 10px 0 5px;
 }
 
 .border img{
@@ -155,9 +175,10 @@ div hr{
 
 .main{
     width: calc(100% - 200px);
-    height: 1000px;
-    margin-left: 200px;
-    margin-bottom: 100px;
+    height: 100vh;
+    margin: -50px 200px 100px;
+    /* margin-left: 200px;
+    margin-bottom: 100px; */
     background-color: #141922;
     position: absolute;
     position: relative;
@@ -212,7 +233,7 @@ div hr{
 }
 
 /* MOBILE */
-@media screen and (max-width:368px){
+@media screen and (max-width:500px){
     .topbar{
         width: calc(100% - 50px);
         margin-left: 50px;
@@ -224,15 +245,43 @@ div hr{
     }
 
 
-
     .col-12, .col-14, .col-15{
         height: 30px;
         margin: 5px 10px;
     }
 
+    .col-12 img, .col-12 h4, .col-12 span, .col-10 span{
+        display: none;
+    }
+
+    .fa-plus{
+        display: none;
+    }
+
+    .col-15{
+        display: none;
+    }
+
+    #small{
+        display: block;
+        width: 30px;
+    }
+
+    .col-14 img{
+        display: block;
+    }
+
+    .col-14 span{
+        display: none;
+    }
+
     .col-10{
         height: 70px;
         margin-top: 350px;
+    }
+
+    .col-10 hr{
+        display: none;
     }
 
     .main{
@@ -245,7 +294,7 @@ div hr{
     }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:650px){
     #width, #width-1{
         width: calc(60% - 40px);
     }
