@@ -268,7 +268,7 @@ ul li{
 
 .col-95{
     width: calc(100% / 6 - 21px);
-    margin: 0 auto 20px;
+    margin: 0 10px 20px;
 }
 
 .col-95 img, .col-40 img{
@@ -387,7 +387,7 @@ ul li{
 }
 
 .left .fa-list-ul{
-    margin: 25px 5px 0 60px;
+    margin: 25px 5px 0 40px;
     color: #a3a3a3;
 }
 
