@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <title>Spotify</title>
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
+    <!-- TOPBAR -->
     <div>
         <div class="container">
             <div class="row topbar">
@@ -19,7 +23,8 @@
             </div>
         </div>
     </div>
-    
+    <!-- END TOBAR -->
+    <!-- SIDEBAR -->
    <div>
        <div class="container">
            <div class="row sidebar">
@@ -90,28 +95,30 @@
            </div>
        </div>
    </div>
+   <!-- END SIDEBAR -->
+   <!-- MAIN -->
     <main>
         <div class="container">
             <div class="row main">
                 <div class="col-20">
                     <ul>
                         <li>
-                            IN EVIDENZA
+                            <div class="flex">IN EVIDENZA</div>
                             <hr id="middle">
                         </li>    
-                        <li class="inline-block">
+                        <li class="flex">
                             PODCAST
                         </li>    
-                        <li class="inline-block">
+                        <li class="flex">
                             CLASSIFICHE
                         </li>
-                        <li class="inline-block">
+                        <li class="flex">
                             GENERI E MOOD
                         </li>
-                        <li class="m-left inline-block">
+                        <li class="flex">
                             NUOVE USCITE
                         </li>
-                        <li id="m-l" class="m-left inline-block">
+                        <li  class="flex">
                             SCOPRI
                         </li>
                     </ul>
@@ -190,6 +197,8 @@
             </div>
         </div>
     </main>
+    <!-- END MAIN -->
+    <!-- BOTTOMBAR -->
    <div>
        <div class="container">
            <div class="row bottombar">
@@ -199,7 +208,7 @@
                     </div>
                     <div class="center">
                         <div id="color">Sinister</div>
-                        <div>Brano Nome</div>
+                        <a href="#">Brano Nome</a>
                     </div>
                     <div class="right">
                         <i class="fa-regular fa-heart""></i>
@@ -231,29 +240,34 @@
                         0:25
                     </div>
                     <div class="line">
-                        <div class="line-enter"></div>
+                        <div class="line-enter">
+                            <div class="after"></div>
+                        </div>
                     </div>
                     <div class="time">
                         4:35
                     </div>
                 </div>
                </div>
-               <div class="col-25">
+               <div class="col-27">
                     <div class="left">
                         <i class="fa-solid fa-list-ul"></i>
                     </div>
                     <div class="left">
                         <i class="fa-solid fa-tv"></i>
                     </div>
-                    <div class="left">
+                    <div class="sound">
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
                     <div class="bar">
-                        <div class="enter"></div>
+                        <div class="enter">
+                            <div class="double"></div>
+                        </div>
                     </div>
                </div>
            </div>
        </div>
    </div>
+   <!-- END BOTTOMBAR -->
 </body>
 </html>
